@@ -7,3 +7,9 @@ class HomeView(ListView):
     
     def get_queryset(self):
         return
+
+class StatRepo(ListView):
+    template_name = "trackr_app/stat.html"
+
+    def get_queryset(self):
+        return
