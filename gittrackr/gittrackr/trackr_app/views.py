@@ -13,3 +13,9 @@ class StatRepo(ListView):
 
     def get_queryset(self):
         return
+
+class TailwindEx(ListView):
+    template_name = "trackr_app/tailwindex.html"
+
+    def get_queryset(self):
+        return
