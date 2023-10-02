@@ -790,31 +790,16 @@ select {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#000000\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#\] {
-  background-color: #;
-}
-
-.bg-\[\#264D9A\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 77 154 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\.\.\/\.\.\/images\/bg\.svg\'\)\] {
   background-image: url('../../images/bg.svg');
 }
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -856,9 +841,9 @@ select {
   letter-spacing: 0em;
 }
 
-.text-blue-800 {
+.text-\[\#ffffff\] {
   --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -866,14 +851,9 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#264D9A\] {
+.text-blue-800 {
   --tw-text-opacity: 1;
-  color: rgb(38 77 154 / var(--tw-text-opacity));
-}
-
-.hover\:bg-\[\#264D9A\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 77 154 / var(--tw-bg-opacity));
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
