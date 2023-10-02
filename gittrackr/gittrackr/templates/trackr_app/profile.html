@@ -1,0 +1,131 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\trackr_app\profile.css" />
+    <title>Profile Page</title>
+    {% tailwind_css %}
+</head>
+
+<body class="text-white bg-cover bg-[url('../../images/bg.svg')]">
+    <div class="git-trckr">
+        <h2 class="text-6xl font-semibold mb-4 text-[#ffffff]">
+            Git<span class="text-[#264D9A]">Tracker</span>
+        </h2>
+    </div>
+    <section class="profile">
+        <div class="personal-info">
+            <div class="profile-picture">
+                <img src="static/images/fotoProfil.jpg" alt="Foto Profil" />
+            </div>
+            <h1>Satria Baja Hitam</h1>
+            <a href=""><h2>@satriabj989</h2></a>
+            <div class="info-join">
+                <span class="info-join-item">Joined 23 November 2019</span>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="num-desc">Repositories</span>
+                    <span class="num">5</span>
+                </div>
+                <div class="stat-item">
+                    <span class="num-desc">Followers</span>
+                    <span class="num">76</span>
+                </div>
+                <div class="stat-item">
+                    <span class="num-desc">Following</span>
+                    <span class="num">55</span>
+                </div>
+            </div>
+        </div>
+        <div class="top-language-frame">
+            <div class="top-language">
+                <h2>Top Languages</h2>
+                <div class="language-item">
+                    <span class="icon-language"><img src="static/images/dart.png" alt=""></span>
+                    <span class="label-language">Dart</span>
+                </div>
+                <div class="language-item">
+                    <span class="icon-language"><img src="static/images/python.png" alt=""></span>
+                    <span class="label-language">Python</span>
+                </div>
+                <div class="language-item">
+                    <span class="icon-language"><img src="static/images/php.png" alt=""></span>
+                    <span class="label-language">PHP</span>
+                </div>
+            </div>
+        </div>        
+
+        <section class="repository-section">
+            <h2>Top Repositories</h2>
+            <div class="repo-container">
+                <a href="" target="_blank">
+                    <div class="repo-box">
+                        <div class="repo-info">
+                            <span class="repo-name">Project GitTrackr</span>
+                            <p>Projek 1 untuk Django</p>
+                            <span class="repo-lang">
+                                <div class="icon-language-repo"></div>
+                                Dart
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="repo-box">
+                        <div class="repo-info">
+                            <span class="repo-name">Project GitTrackr Juga</span>
+                            <p>Projek 2 untuk Django</p>
+                            <span class="repo-lang">
+                                <div class="icon-language-repo"></div>
+                                Dart
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="repo-box">
+                        <div class="repo-info">
+                            <span class="repo-name">Project Lain</span>
+                            <p>Projek 3 untuk Django</p>
+                            <span class="repo-lang">
+                                <div class="icon-language-repo"></div>
+                                Python
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="repo-box">
+                        <div class="repo-info">
+                            <span class="repo-name">Project Lainnya</span>
+                            <p>Projek 4 untuk Django</p>
+                            <span class="repo-lang">
+                                <div class="icon-language-repo"></div>
+                                PHP
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="" target="_blank">
+                    <div class="repo-box">
+                        <div class="repo-info">
+                            <span class="repo-name">Project Lainnya</span>
+                            <p>Projek 4 untuk Django</p>
+                            <span class="repo-lang">
+                                <div class="icon-language-repo"></div>
+                                PHP
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </section>
+
+</body>
+
+</html>
