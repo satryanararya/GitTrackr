@@ -1,3 +1,4 @@
+
 const bar = document.getElementById('repo').getContext('2d');
 const canvas1 = document.getElementById('repo');
 const ChartOptions = {
@@ -12,27 +13,23 @@ const ChartOptions = {
     }
   },
   scales: {
-    y: {  
-      ticks: {
-        color: "green", 
-        font: {
-          size: 18, 
-        },
-        stepSize: 1,
-        beginAtZero: true
-      }
-    },
-    x: { 
-      ticks: {
-        color: "purple",  
-        font: {
-          size: 14 
-        },
-        stepSize: 1,
-        beginAtZero: true
-      }
-    }
-  }
+    yAxes: [{
+        ticks: {
+            fontColor: "Black",
+            fontSize: 18,
+            stepSize: 1,
+            beginAtZero: true
+        }
+    }],
+    xAxes: [{
+        ticks: {
+            fontColor: "Black",
+            fontSize: 14,
+            stepSize: 1,
+            beginAtZero: true
+        }
+    }]
+}
 };
 
 
@@ -41,7 +38,7 @@ const ChartOptions = {
     label: 'Airlangga',
     data: 
      [1,2,1,4,3,4,1,3,0],
-    borderColor: 'white',
+    borderColor: 'blue',
     fill: false,
     borderJoinStyle: 'miter',
     tension: 0
