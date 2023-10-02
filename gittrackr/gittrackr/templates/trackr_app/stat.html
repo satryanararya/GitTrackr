@@ -1,26 +1,106 @@
 {% load static %}
-<link rel="stylesheet" href="{% static 'trackr_app/stat.css'%}">
+{% load static tailwind_tags%}
+{% tailwind_css%}
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
-<link href='https://fonts.googleapis.com/css?family=Mada' rel='stylesheet'>
 
 
-<div class="header">
-    <img src="{% static 'trackr_app/images/back.svg'%}" alt="" id="back_header">
-    <img src="{% static 'trackr_app/images/logo.png'%}" alt="" id="logo_header">
-</div>
-<div class="header-stat">
-    Name of Project Contribution
-    <div class="month">
-        February
-        <img src="{% static 'trackr_app/images/down.svg'%}" alt="" id="down_header">
+<body class="bg-cover h-screen bg-[url('../../images/bg.svg')] bg-no-repeat">
+    <div class="flex flex-row justify-between bg-[url('\static\trackr_app\images\bg.svg')] pb-20">
+        <img src="/theme/static/images/back.svg" alt="" class="pl-5 pt-3">
+        <img src="/theme/static/images/logo.png" alt="" class="pt-3">
+        <div class="blank"></div>
     </div>
-</div>
-<div class="stat-repo">
-    <canvas id="repo" width="1169px" height="480px">
+    <div class="font-sans font-bold flex flex-row  justify-between mx-8 text-2xl">
+        Name of Project Contribution
+        <div class="group relative">
+            <button  class="bg-black w-32 h-10 flex flex-row justify-center text-white rounded-lg pt-1 text-base">
+                February
+                <img src="/theme/static/images/down.svg" alt="" class="h-6 w-5 pl-2">
+    
+            </button>
+            <div  class="bg-black  justify-center text-white rounded-lg py-2 mt-1 absolute hidden text-base ">
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> January</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> February</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> March</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> April</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> May</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> June</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> July</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> August</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> September</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> October</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> November</a>
+                <a href="#" class="block px-6 py-2 text-white hover:bg-white hover:text-black w-auto"> December</a>
+            </div>
+        </div>
 
-    </canvas>
-</div>
-<div class="history-repo">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsum fuga consequuntur ducimus modi iusto, repudiandae est libero voluptatum. Ex cupiditate corrupti at expedita ipsam eaque animi labore dolorum aut.
-</div>
+    </div>
+    <div class="stat-repo ">
+        <canvas id="repo" width="1169px" height="480px">
+    
+        </canvas>
+    </div>
+    <div class=" p-10 ">
+        <div class="flex flex-row">
+            <div class="font-sans font-bold">
+                February,2023
+            </div>
+            <div class="w-full h-1 bg-black mt-3 ml-2"></div>
+
+        </div>
+        <div class="flex flex-row">
+            <div class="w-1 h-100 bg-black mt-1 mr-2"></div>
+            <div class="flex flex-col">
+                <div class="stat pt-5 pl-3">
+                    <div  class="font-sans font-semibold text-2xl">
+                        Commit
+                    </div>
+                    <div class="text-blue-500 font-sans font-bold text-lg flex flex-row mt-1">
+                        Frequency : <span class="text-gray-500 ml-1">31</span>
+                    </div>
+                    <div class="text-blue-500 font-sans font-bold text-lg flex flex-row mt-1">
+                        Last Commit : <span class="text-gray-500 ml-1">February 27th, 2023</span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="stat pt-5 pl-3">
+                    <div  class="font-sans font-semibold text-2xl">
+                        Pull Request
+                    </div>
+                    <div class="text-blue-500 font-sans font-bold text-lg flex flex-row mt-1">
+                        Frequency : <span class="text-gray-500 ml-1">31</span>
+                    </div>
+                    <div class="text-blue-500 font-sans font-bold text-lg flex flex-row mt-1">
+                        Last Pull Request : <span class="text-gray-500 ml-1">February 27th, 2023</span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="stat pt-5 pl-3">
+                    <div  class="font-sans font-semibold text-2xl">
+                        Code Issue Opened
+                    </div>
+                    <div class="text-blue-500 font-sans font-bold text-lg flex flex-row mt-1">
+                        Frequency : <span class="text-gray-500 ml-1">31</span>
+                    </div>
+                    <div class="text-blue-500 font-sans font-bold text-lg flex flex-row mt-1">
+                        Last Issue Opened : <span class="text-gray-500 ml-1">February 27th, 2023</span>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            
+        </div>
+    </div> 
+ 
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const dropdownButton = document.querySelector(".group");
+    const dropdownMenu = document.querySelector(".absolute");
+
+    dropdownButton.addEventListener("click", function () {
+      dropdownMenu.classList.toggle("hidden");
+    });
+  });
+</script>
 <script src="{% static 'trackr_app/chart.js'%}"></script>
