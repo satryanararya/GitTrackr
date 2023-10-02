@@ -743,25 +743,13 @@ select {
   position: static;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
-.inset-0 {
-  inset: 0px;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -772,8 +760,8 @@ select {
   height: 100vh;
 }
 
-.h-14 {
-  height: 3.5rem;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .items-center {
@@ -784,171 +772,67 @@ select {
   justify-content: center;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.bg-blue-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
+.bg-\[\#000000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[body\] {
-  background-color: body;
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[body-img\] {
-  background-color: body-img;
+.bg-\[\#\] {
+  background-color: #;
 }
 
-.bg-\[\(\'\/gittrackr\/gittrackr\/trackr_app\/static\/trackr_app\/images\/bg\.svg\'\)\] {
-  background-color: ('/gittrackr/gittrackr/trackr app/static/trackr app/images/bg.svg');
-}
-
-.bg-\[ur\] {
-  background-color: ur;
-}
-
-.bg-\[url\] {
-  background-color: url;
-}
-
-.bg-\[url\(\'\/gittrackr\/gittrackr\/trackr_app\/static\/trackr_app\/images\/bg\.svg\'\)\] {
-  background-image: url('/gittrackr/gittrackr/trackr_app/static/trackr_app/images/bg.svg');
-}
-
-.bg-body-img {
-  background-image: url('/gittrackr/gittrackr/trackr_app/static/trackr_app/images/bg.svg');
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\/image\'\)\] {
-  background-image: url('/image');
-}
-
-.bg-\[url\(\'\/images\/\'\)\] {
-  background-image: url('/images/');
-}
-
-.bg-\[url\(\'\/images\/bg\'\)\] {
-  background-image: url('/images/bg');
-}
-
-.bg-\[url\(\'\/images\/bg\.svg\'\)\] {
-  background-image: url('/images/bg.svg');
-}
-
-.bg-\[url\(\'\/\'\)\] {
-  background-image: url('/');
-}
-
-.bg-\[url\(\'\/gittrackr\'\)\] {
-  background-image: url('/gittrackr');
-}
-
-.bg-\[url\(\'\/gittrackr\/\'\)\] {
-  background-image: url('/gittrackr/');
-}
-
-.bg-\[url\(\'\/gittrackr\/gittrackr\'\)\] {
-  background-image: url('/gittrackr/gittrackr');
-}
-
-.bg-\[url\(\'\/gittrackr\/gittrackr\/\'\)\] {
-  background-image: url('/gittrackr/gittrackr/');
-}
-
-.bg-\[url\(\'\/gittrackr\/gittrackr\/trackr_app\/\'\)\] {
-  background-image: url('/gittrackr/gittrackr/trackr_app/');
-}
-
-.bg-\[url\(\'\/gittrackr\/gittrackr\/trackr_app\/static\/trackr_app\/\'\)\] {
-  background-image: url('/gittrackr/gittrackr/trackr_app/static/trackr_app/');
-}
-
-.bg-\[url\(\'\/gittrackr\/gittrackr\/trackr_app\/static\/trackr_app\/images\/\'\)\] {
-  background-image: url('/gittrackr/gittrackr/trackr_app/static/trackr_app/images/');
-}
-
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-
-.bg-\[url\(\'images\'\)\] {
-  background-image: url('images');
-}
-
-.bg-\[url\(\'images\/\'\)\] {
-  background-image: url('images/');
-}
-
-.bg-\[url\(\'images\/bg\'\)\] {
-  background-image: url('images/bg');
-}
-
-.bg-\[url\(\'images\/bg\.svg\'\)\] {
-  background-image: url('images/bg.svg');
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'\.\'\)\] {
-  background-image: url('.');
-}
-
-.bg-\[url\(\'\.\/\'\)\] {
-  background-image: url('./');
-}
-
-.bg-\[url\(\'\.\.\/\'\)\] {
-  background-image: url('../');
-}
-
-.bg-\[url\(\'\.\.\/trac\'\)\] {
-  background-image: url('../trac');
-}
-
-.bg-\[url\(\'\.\.\/\/images\/bg\.svg\'\)\] {
-  background-image: url('..//images/bg.svg');
-}
-
-.bg-\[url\(\'\.\.\/tr\/images\/bg\.svg\'\)\] {
-  background-image: url('../tr/images/bg.svg');
-}
-
-.bg-\[url\(\'\.\.\/trackr_app\/images\/bg\.svg\'\)\] {
-  background-image: url('../trackr_app/images/bg.svg');
-}
-
-.bg-\[url\(\'\.\.\/trackr_app\/static\/images\/bg\.svg\'\)\] {
-  background-image: url('../trackr_app/static/images/bg.svg');
+.bg-\[\#264D9A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 77 154 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/\.\.\/images\/bg\.svg\'\)\] {
   background-image: url('../../images/bg.svg');
 }
 
-.from-cyan-500 {
-  --tw-gradient-from: #06b6d4 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(6 182 212 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-blue-500 {
-  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
-}
-
 .bg-cover {
   background-size: cover;
 }
 
-.bg-center {
-  background-position: center;
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-serif {
@@ -960,8 +844,8 @@ select {
   line-height: 1;
 }
 
-.text-\[200px\] {
-  font-size: 200px;
+.font-semibold {
+  font-weight: 600;
 }
 
 .leading-normal {
@@ -972,7 +856,38 @@ select {
   letter-spacing: 0em;
 }
 
-.text-\[\#123456\] {
+.text-blue-800 {
   --tw-text-opacity: 1;
-  color: rgb(18 52 86 / var(--tw-text-opacity));
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#264D9A\] {
+  --tw-text-opacity: 1;
+  color: rgb(38 77 154 / var(--tw-text-opacity));
+}
+
+.hover\:bg-\[\#264D9A\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 77 154 / var(--tw-bg-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-blue-600:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(37 99 235 / var(--tw-ring-opacity));
 }
