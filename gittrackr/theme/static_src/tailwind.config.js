@@ -42,7 +42,11 @@ module.exports = {
         // '../../**/*.py'
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'body-img' : "url('/gittrackr/gittrackr/trackr_app/static/trackr_app/images/bg.svg')",
+            }
+        },
     },
     plugins: [
         /**
