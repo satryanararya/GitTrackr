@@ -743,6 +743,22 @@ select {
   position: static;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -756,6 +772,10 @@ select {
   height: 100vh;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .items-center {
   align-items: center;
 }
@@ -767,6 +787,168 @@ select {
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[body\] {
+  background-color: body;
+}
+
+.bg-\[body-img\] {
+  background-color: body-img;
+}
+
+.bg-\[\(\'\/gittrackr\/gittrackr\/trackr_app\/static\/trackr_app\/images\/bg\.svg\'\)\] {
+  background-color: ('/gittrackr/gittrackr/trackr app/static/trackr app/images/bg.svg');
+}
+
+.bg-\[ur\] {
+  background-color: ur;
+}
+
+.bg-\[url\] {
+  background-color: url;
+}
+
+.bg-\[url\(\'\/gittrackr\/gittrackr\/trackr_app\/static\/trackr_app\/images\/bg\.svg\'\)\] {
+  background-image: url('/gittrackr/gittrackr/trackr_app/static/trackr_app/images/bg.svg');
+}
+
+.bg-body-img {
+  background-image: url('/gittrackr/gittrackr/trackr_app/static/trackr_app/images/bg.svg');
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\/image\'\)\] {
+  background-image: url('/image');
+}
+
+.bg-\[url\(\'\/images\/\'\)\] {
+  background-image: url('/images/');
+}
+
+.bg-\[url\(\'\/images\/bg\'\)\] {
+  background-image: url('/images/bg');
+}
+
+.bg-\[url\(\'\/images\/bg\.svg\'\)\] {
+  background-image: url('/images/bg.svg');
+}
+
+.bg-\[url\(\'\/\'\)\] {
+  background-image: url('/');
+}
+
+.bg-\[url\(\'\/gittrackr\'\)\] {
+  background-image: url('/gittrackr');
+}
+
+.bg-\[url\(\'\/gittrackr\/\'\)\] {
+  background-image: url('/gittrackr/');
+}
+
+.bg-\[url\(\'\/gittrackr\/gittrackr\'\)\] {
+  background-image: url('/gittrackr/gittrackr');
+}
+
+.bg-\[url\(\'\/gittrackr\/gittrackr\/\'\)\] {
+  background-image: url('/gittrackr/gittrackr/');
+}
+
+.bg-\[url\(\'\/gittrackr\/gittrackr\/trackr_app\/\'\)\] {
+  background-image: url('/gittrackr/gittrackr/trackr_app/');
+}
+
+.bg-\[url\(\'\/gittrackr\/gittrackr\/trackr_app\/static\/trackr_app\/\'\)\] {
+  background-image: url('/gittrackr/gittrackr/trackr_app/static/trackr_app/');
+}
+
+.bg-\[url\(\'\/gittrackr\/gittrackr\/trackr_app\/static\/trackr_app\/images\/\'\)\] {
+  background-image: url('/gittrackr/gittrackr/trackr_app/static/trackr_app/images/');
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\'images\'\)\] {
+  background-image: url('images');
+}
+
+.bg-\[url\(\'images\/\'\)\] {
+  background-image: url('images/');
+}
+
+.bg-\[url\(\'images\/bg\'\)\] {
+  background-image: url('images/bg');
+}
+
+.bg-\[url\(\'images\/bg\.svg\'\)\] {
+  background-image: url('images/bg.svg');
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\'\)\] {
+  background-image: url('.');
+}
+
+.bg-\[url\(\'\.\/\'\)\] {
+  background-image: url('./');
+}
+
+.bg-\[url\(\'\.\.\/\'\)\] {
+  background-image: url('../');
+}
+
+.bg-\[url\(\'\.\.\/trac\'\)\] {
+  background-image: url('../trac');
+}
+
+.bg-\[url\(\'\.\.\/\/images\/bg\.svg\'\)\] {
+  background-image: url('..//images/bg.svg');
+}
+
+.bg-\[url\(\'\.\.\/tr\/images\/bg\.svg\'\)\] {
+  background-image: url('../tr/images/bg.svg');
+}
+
+.bg-\[url\(\'\.\.\/trackr_app\/images\/bg\.svg\'\)\] {
+  background-image: url('../trackr_app/images/bg.svg');
+}
+
+.bg-\[url\(\'\.\.\/trackr_app\/static\/images\/bg\.svg\'\)\] {
+  background-image: url('../trackr_app/static/images/bg.svg');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/images\/bg\.svg\'\)\] {
+  background-image: url('../../images/bg.svg');
+}
+
+.from-cyan-500 {
+  --tw-gradient-from: #06b6d4 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(6 182 212 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-blue-500 {
+  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .font-serif {
@@ -788,14 +970,6 @@ select {
 
 .tracking-normal {
   letter-spacing: 0em;
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[color\] {
-  color: color;
 }
 
 .text-\[\#123456\] {
