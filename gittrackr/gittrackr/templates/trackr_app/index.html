@@ -1,1 +1,26 @@
-Hello world asu
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    {% tailwind_css %}
+</head>
+<body>
+    <div class="flex justify-center items-center min-h-screen bg-cover bg-center bg-no-repeat bg-[url('../../images/bg.svg')]">
+        <div class="text-center">
+            <h2 class="text-6xl font-semibold mb-8 text-[#ffffff]">
+                Git<span class="text-[#264D9A]">Tracker</span>
+            </h2>
+            <form>
+                <!-- Hanya kolom username -->
+                <div class="mb-8">
+                    <input type="text" class="text-center placeholder:text-center placeholder:text-slate-400 text-xl h-20 w-[500px] border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Username" required>
+                </div>
+                <button type="submit" class="h-14 w-36 bg-[#264D9A] rounded-full text-white py-2 px-4 hover:bg-blue-1000 focus:outline-none focus:ring-2 focus:ring-blue-600">Show Stats</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
